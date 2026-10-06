@@ -36,17 +36,17 @@ def run_epoch(model, loader, criterion, device, optimizer=None):
             correct += (logits.argmax(1) == labels).sum().item()
     return total_loss / count, correct / count
 
-
+    
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--data-dir', required=True)
     p.add_argument('--split', default='splits.json')
     p.add_argument('--output', default='outputs/run1')
-    p.add_argument('--epochs', type=int, default=20)
+    p.add_argument('--epochs', type=int, default=100)
     p.add_argument('--batch-size', type=int, default=32)
     p.add_argument('--lr', type=float, default=0.0001)
     p.add_argument('--weight-decay', type=float, default=0.0001)
-    p.add_argument('--patience', type=int, default=5)
+    p.add_argument('--patience', type=int, default=10)
     p.add_argument('--image-size', type=int, default=224)
     p.add_argument('--workers', type=int, default=0)
     p.add_argument('--seed', type=int, default=42)
