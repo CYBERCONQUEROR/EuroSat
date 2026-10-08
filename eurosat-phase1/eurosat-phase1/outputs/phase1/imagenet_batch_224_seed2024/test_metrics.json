@@ -1,0 +1,94 @@
+{
+  "accuracy": 0.9903703703703703,
+  "macro_f1": 0.9899702747059,
+  "balanced_accuracy": 0.9894666666666667,
+  "per_class_recall": {
+    "AnnualCrop": 0.9888888888888889,
+    "Forest": 1.0,
+    "HerbaceousVegetation": 0.9933333333333333,
+    "Highway": 0.9946666666666667,
+    "Industrial": 0.9893333333333333,
+    "Pasture": 0.9733333333333334,
+    "PermanentCrop": 0.9626666666666667,
+    "Residential": 0.9977777777777778,
+    "River": 0.9946666666666667,
+    "SeaLake": 1.0
+  },
+  "classification_report": {
+    "AnnualCrop": {
+      "precision": 0.9758771929824561,
+      "recall": 0.9888888888888889,
+      "f1-score": 0.9823399558498896,
+      "support": 450.0
+    },
+    "Forest": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 450.0
+    },
+    "HerbaceousVegetation": {
+      "precision": 0.9738562091503268,
+      "recall": 0.9933333333333333,
+      "f1-score": 0.9834983498349835,
+      "support": 450.0
+    },
+    "Highway": {
+      "precision": 0.9893899204244032,
+      "recall": 0.9946666666666667,
+      "f1-score": 0.9920212765957447,
+      "support": 375.0
+    },
+    "Industrial": {
+      "precision": 0.9973118279569892,
+      "recall": 0.9893333333333333,
+      "f1-score": 0.9933065595716198,
+      "support": 375.0
+    },
+    "Pasture": {
+      "precision": 0.9898305084745763,
+      "recall": 0.9733333333333334,
+      "f1-score": 0.9815126050420168,
+      "support": 300.0
+    },
+    "PermanentCrop": {
+      "precision": 0.9863387978142076,
+      "recall": 0.9626666666666667,
+      "f1-score": 0.9743589743589743,
+      "support": 375.0
+    },
+    "Residential": {
+      "precision": 0.9955654101995566,
+      "recall": 0.9977777777777778,
+      "f1-score": 0.9966703662597114,
+      "support": 450.0
+    },
+    "River": {
+      "precision": 0.9973262032085561,
+      "recall": 0.9946666666666667,
+      "f1-score": 0.9959946595460614,
+      "support": 375.0
+    },
+    "SeaLake": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 450.0
+    },
+    "accuracy": 0.9903703703703703,
+    "macro avg": {
+      "precision": 0.9905496070211072,
+      "recall": 0.9894666666666667,
+      "f1-score": 0.9899702747059,
+      "support": 4050.0
+    },
+    "weighted avg": {
+      "precision": 0.9904249750909837,
+      "recall": 0.9903703703703703,
+      "f1-score": 0.9903612926332884,
+      "support": 4050.0
+    }
+  },
+  "checkpoint_epoch": 15,
+  "split_hash": "314a000080506dac74ddf07a196d1d76311f847418149073f17c9628e901e7bf"
+}

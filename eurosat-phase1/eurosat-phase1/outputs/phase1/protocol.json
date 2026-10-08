@@ -1,0 +1,18 @@
+{
+  "data_dir": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/EuroSAT_RGB",
+  "split": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-phase1/splits.json",
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "epochs": 100,
+  "patience": 10,
+  "batch_size": 32,
+  "workers": 0,
+  "device": "cuda",
+  "pretrained_lr": 0.0001,
+  "scratch_lr": 0.001,
+  "split_hash": "314a000080506dac74ddf07a196d1d76311f847418149073f17c9628e901e7bf",
+  "selection_threshold": 0.005
+}

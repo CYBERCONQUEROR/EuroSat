@@ -1,0 +1,2 @@
+Training + validation loop seconds: 737.4378986900047
+Total seconds including model/data setup: 738.373

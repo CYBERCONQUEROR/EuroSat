@@ -1,0 +1,94 @@
+{
+  "accuracy": 0.9837037037037037,
+  "macro_f1": 0.9831069577091947,
+  "balanced_accuracy": 0.9834444444444443,
+  "per_class_recall": {
+    "AnnualCrop": 0.9622222222222222,
+    "Forest": 1.0,
+    "HerbaceousVegetation": 0.9755555555555555,
+    "Highway": 0.9893333333333333,
+    "Industrial": 0.9893333333333333,
+    "Pasture": 0.9766666666666667,
+    "PermanentCrop": 0.9653333333333334,
+    "Residential": 0.9888888888888889,
+    "River": 0.9893333333333333,
+    "SeaLake": 0.9977777777777778
+  },
+  "classification_report": {
+    "AnnualCrop": {
+      "precision": 0.9752252252252253,
+      "recall": 0.9622222222222222,
+      "f1-score": 0.9686800894854586,
+      "support": 450.0
+    },
+    "Forest": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 450.0
+    },
+    "HerbaceousVegetation": {
+      "precision": 0.984304932735426,
+      "recall": 0.9755555555555555,
+      "f1-score": 0.9799107142857143,
+      "support": 450.0
+    },
+    "Highway": {
+      "precision": 0.9712041884816754,
+      "recall": 0.9893333333333333,
+      "f1-score": 0.9801849405548216,
+      "support": 375.0
+    },
+    "Industrial": {
+      "precision": 0.9840848806366048,
+      "recall": 0.9893333333333333,
+      "f1-score": 0.9867021276595744,
+      "support": 375.0
+    },
+    "Pasture": {
+      "precision": 0.9701986754966887,
+      "recall": 0.9766666666666667,
+      "f1-score": 0.973421926910299,
+      "support": 300.0
+    },
+    "PermanentCrop": {
+      "precision": 0.9551451187335093,
+      "recall": 0.9653333333333334,
+      "f1-score": 0.9602122015915119,
+      "support": 375.0
+    },
+    "Residential": {
+      "precision": 0.9933035714285714,
+      "recall": 0.9888888888888889,
+      "f1-score": 0.9910913140311804,
+      "support": 450.0
+    },
+    "River": {
+      "precision": 0.9946380697050938,
+      "recall": 0.9893333333333333,
+      "f1-score": 0.9919786096256684,
+      "support": 375.0
+    },
+    "SeaLake": {
+      "precision": 1.0,
+      "recall": 0.9977777777777778,
+      "f1-score": 0.9988876529477196,
+      "support": 450.0
+    },
+    "accuracy": 0.9837037037037037,
+    "macro avg": {
+      "precision": 0.9828104662442794,
+      "recall": 0.9834444444444443,
+      "f1-score": 0.9831069577091947,
+      "support": 4050.0
+    },
+    "weighted avg": {
+      "precision": 0.9837621919649353,
+      "recall": 0.9837037037037037,
+      "f1-score": 0.9837128838759169,
+      "support": 4050.0
+    }
+  },
+  "checkpoint_epoch": 20,
+  "split_hash": "314a000080506dac74ddf07a196d1d76311f847418149073f17c9628e901e7bf"
+}

@@ -1,0 +1,18 @@
+% Requires \usepackage{booktabs}
+\begin{table*}[t]
+\centering
+\scriptsize
+\caption{Phase 1 results: mean $\pm$ sample standard deviation across seeds. Scores are percentages.}
+\begin{tabular}{lllrrrrrr}
+\toprule
+Init. & Norm & Size & Seeds & Val F1 & Test acc. & Test F1 & Test bal. acc. & Seconds \\
+\midrule
+imagenet & batch & 64 & 3 & 98.01 $\pm$ 0.06 & 98.32 $\pm$ 0.11 & 98.27 $\pm$ 0.11 & 98.28 $\pm$ 0.12 & 530.28 $\pm$ 42.36 \\
+imagenet & batch & 96 & 3 & 98.50 $\pm$ 0.22 & 98.64 $\pm$ 0.09 & 98.59 $\pm$ 0.08 & 98.58 $\pm$ 0.07 & 650.26 $\pm$ 155.20 \\
+imagenet & batch & 224 & 3 & 98.78 $\pm$ 0.20 & 98.94 $\pm$ 0.24 & 98.90 $\pm$ 0.25 & 98.88 $\pm$ 0.25 & 2006.62 $\pm$ 530.35 \\
+scratch & batch & 96 & 3 & 96.76 $\pm$ 0.22 & 96.87 $\pm$ 0.24 & 96.76 $\pm$ 0.26 & 96.76 $\pm$ 0.23 & 1011.52 $\pm$ 91.32 \\
+scratch & group & 96 & 3 & 94.51 $\pm$ 0.29 & 95.31 $\pm$ 0.20 & 95.19 $\pm$ 0.19 & 95.18 $\pm$ 0.20 & 807.92 $\pm$ 62.05 \\
+\bottomrule
+\end{tabular}
+\label{tab:phase1}
+\end{table*}

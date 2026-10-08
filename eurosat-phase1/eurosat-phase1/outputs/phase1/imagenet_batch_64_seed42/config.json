@@ -1,0 +1,21 @@
+{
+  "data_dir": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/EuroSAT_RGB",
+  "split": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-phase1/splits.json",
+  "output": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-phase1/outputs/phase1/imagenet_batch_64_seed42",
+  "epochs": 100,
+  "patience": 10,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "image_size": 64,
+  "norm": "batch",
+  "loss": "cross-entropy",
+  "workers": 0,
+  "seed": 42,
+  "device": "cuda",
+  "from_scratch": false,
+  "split_hash": "314a000080506dac74ddf07a196d1d76311f847418149073f17c9628e901e7bf",
+  "checkpoint_rule": "minimum_validation_cross_entropy",
+  "initialization": "imagenet",
+  "groupnorm_groups": null
+}

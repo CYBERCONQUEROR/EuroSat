@@ -1,0 +1,15 @@
+{
+  "data_dir": "EuroSAT_RGB",
+  "split": "splits.json",
+  "output": "outputs/run1",
+  "epochs": 20,
+  "batch_size": 32,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "patience": 5,
+  "image_size": 224,
+  "workers": 0,
+  "seed": 42,
+  "device": "auto",
+  "from_scratch": false
+}

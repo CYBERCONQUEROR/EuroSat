@@ -1,0 +1,79 @@
+{
+  "accuracy": 0.9883950617283951,
+  "macro_f1": 0.9880622217783918,
+  "classification_report": {
+    "AnnualCrop": {
+      "precision": 0.973568281938326,
+      "recall": 0.9822222222222222,
+      "f1-score": 0.9778761061946902,
+      "support": 450.0
+    },
+    "Forest": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 450.0
+    },
+    "HerbaceousVegetation": {
+      "precision": 0.9866071428571429,
+      "recall": 0.9822222222222222,
+      "f1-score": 0.9844097995545658,
+      "support": 450.0
+    },
+    "Highway": {
+      "precision": 0.986737400530504,
+      "recall": 0.992,
+      "f1-score": 0.9893617021276596,
+      "support": 375.0
+    },
+    "Industrial": {
+      "precision": 0.986737400530504,
+      "recall": 0.992,
+      "f1-score": 0.9893617021276596,
+      "support": 375.0
+    },
+    "Pasture": {
+      "precision": 0.9866220735785953,
+      "recall": 0.9833333333333333,
+      "f1-score": 0.9849749582637729,
+      "support": 300.0
+    },
+    "PermanentCrop": {
+      "precision": 0.968,
+      "recall": 0.968,
+      "f1-score": 0.968,
+      "support": 375.0
+    },
+    "Residential": {
+      "precision": 0.9977628635346756,
+      "recall": 0.9911111111111112,
+      "f1-score": 0.9944258639910813,
+      "support": 450.0
+    },
+    "River": {
+      "precision": 0.9946524064171123,
+      "recall": 0.992,
+      "f1-score": 0.9933244325767691,
+      "support": 375.0
+    },
+    "SeaLake": {
+      "precision": 1.0,
+      "recall": 0.9977777777777778,
+      "f1-score": 0.9988876529477196,
+      "support": 450.0
+    },
+    "accuracy": 0.9883950617283951,
+    "macro avg": {
+      "precision": 0.9880687569386859,
+      "recall": 0.9880666666666666,
+      "f1-score": 0.9880622217783918,
+      "support": 4050.0
+    },
+    "weighted avg": {
+      "precision": 0.9884213715127009,
+      "recall": 0.9883950617283951,
+      "f1-score": 0.9884025102471088,
+      "support": 4050.0
+    }
+  }
+}

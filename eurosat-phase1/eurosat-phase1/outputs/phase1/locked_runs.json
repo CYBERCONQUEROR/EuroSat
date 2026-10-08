@@ -1,0 +1,20 @@
+{
+  "runs": [
+    "imagenet_batch_224_seed42",
+    "imagenet_batch_224_seed123",
+    "imagenet_batch_224_seed2024",
+    "imagenet_batch_96_seed42",
+    "imagenet_batch_96_seed123",
+    "imagenet_batch_96_seed2024",
+    "imagenet_batch_64_seed42",
+    "imagenet_batch_64_seed123",
+    "imagenet_batch_64_seed2024",
+    "scratch_batch_96_seed42",
+    "scratch_batch_96_seed123",
+    "scratch_batch_96_seed2024",
+    "scratch_group_96_seed42",
+    "scratch_group_96_seed123",
+    "scratch_group_96_seed2024"
+  ],
+  "protocol_hash": "f8994bdac505c7218def39448739c7f89f56c9cac1f2af2764025e327b292177"
+}

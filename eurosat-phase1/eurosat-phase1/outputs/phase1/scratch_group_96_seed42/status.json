@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-07T23:12:31.313431+00:00",
+  "best_epoch": 27,
+  "epochs_completed": 37,
+  "stopping_reason": "early_stopping",
+  "elapsed_loop_seconds": 854.3324646990004,
+  "ended_utc": "2026-10-07T23:26:46.615669+00:00",
+  "total_seconds": 855.3022375040018,
+  "training_loop_seconds": 854.3328272409999
+}

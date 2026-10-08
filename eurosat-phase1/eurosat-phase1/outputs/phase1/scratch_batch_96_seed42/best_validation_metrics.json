@@ -1,0 +1,94 @@
+{
+  "accuracy": 0.9706172839506173,
+  "macro_f1": 0.969583526482728,
+  "balanced_accuracy": 0.9698444444444444,
+  "per_class_recall": {
+    "AnnualCrop": 0.9511111111111111,
+    "Forest": 0.9911111111111112,
+    "HerbaceousVegetation": 0.9533333333333334,
+    "Highway": 0.9706666666666667,
+    "Industrial": 0.984,
+    "Pasture": 0.9566666666666667,
+    "PermanentCrop": 0.952,
+    "Residential": 0.9955555555555555,
+    "River": 0.9573333333333334,
+    "SeaLake": 0.9866666666666667
+  },
+  "classification_report": {
+    "AnnualCrop": {
+      "precision": 0.9749430523917996,
+      "recall": 0.9511111111111111,
+      "f1-score": 0.9628796400449944,
+      "support": 450.0
+    },
+    "Forest": {
+      "precision": 0.9955357142857143,
+      "recall": 0.9911111111111112,
+      "f1-score": 0.9933184855233853,
+      "support": 450.0
+    },
+    "HerbaceousVegetation": {
+      "precision": 0.9326086956521739,
+      "recall": 0.9533333333333334,
+      "f1-score": 0.9428571428571428,
+      "support": 450.0
+    },
+    "Highway": {
+      "precision": 0.9811320754716981,
+      "recall": 0.9706666666666667,
+      "f1-score": 0.9758713136729222,
+      "support": 375.0
+    },
+    "Industrial": {
+      "precision": 0.9787798408488063,
+      "recall": 0.984,
+      "f1-score": 0.9813829787234043,
+      "support": 375.0
+    },
+    "Pasture": {
+      "precision": 0.9379084967320261,
+      "recall": 0.9566666666666667,
+      "f1-score": 0.9471947194719472,
+      "support": 300.0
+    },
+    "PermanentCrop": {
+      "precision": 0.9248704663212435,
+      "recall": 0.952,
+      "f1-score": 0.938239159001314,
+      "support": 375.0
+    },
+    "Residential": {
+      "precision": 0.9933481152993349,
+      "recall": 0.9955555555555555,
+      "f1-score": 0.9944506104328524,
+      "support": 450.0
+    },
+    "River": {
+      "precision": 0.9755434782608695,
+      "recall": 0.9573333333333334,
+      "f1-score": 0.9663526244952894,
+      "support": 375.0
+    },
+    "SeaLake": {
+      "precision": 1.0,
+      "recall": 0.9866666666666667,
+      "f1-score": 0.9932885906040269,
+      "support": 450.0
+    },
+    "accuracy": 0.9706172839506173,
+    "macro avg": {
+      "precision": 0.9694669935263667,
+      "recall": 0.9698444444444444,
+      "f1-score": 0.969583526482728,
+      "support": 4050.0
+    },
+    "weighted avg": {
+      "precision": 0.9709606806891726,
+      "recall": 0.9706172839506173,
+      "f1-score": 0.9707180754467934,
+      "support": 4050.0
+    }
+  },
+  "loss": 0.09672351069518445,
+  "epoch": 37
+}

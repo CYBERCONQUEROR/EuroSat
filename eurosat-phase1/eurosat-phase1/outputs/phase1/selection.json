@@ -1,0 +1,23 @@
+{
+  "selected_size": 96,
+  "scores": {
+    "224": [
+      0.9889604253906542,
+      0.9854625941989493,
+      0.9888779711096489
+    ],
+    "96": [
+      0.9846491773744219,
+      0.9829885704618446,
+      0.9873663503608648
+    ],
+    "64": [
+      0.9806803948542393,
+      0.98019733513574,
+      0.9795590718113854
+    ]
+  },
+  "metric": "mean validation macro-F1 at lowest-validation-loss checkpoint",
+  "rule": "smallest size with drop strictly below 0.005 from 224; otherwise 224",
+  "split_hash": "314a000080506dac74ddf07a196d1d76311f847418149073f17c9628e901e7bf"
+}

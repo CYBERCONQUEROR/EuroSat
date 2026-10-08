@@ -68,7 +68,6 @@ EuroSAT/
 *.tar
 
 # Model checkpoints & Outputs
-outputs/
 *.pt
 *.pth
 *.onnx
