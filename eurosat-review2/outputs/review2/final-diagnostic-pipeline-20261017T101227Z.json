@@ -1,0 +1,105 @@
+{
+  "launched_utc": "2026-10-17T10:12:27.711799+00:00",
+  "pipeline_state": "interrupted_by_reboot",
+  "supervisor_pid": 654741,
+  "session_id": 654741,
+  "process_group_id": 654741,
+  "working_directory": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2",
+  "record_path": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/final-diagnostic-pipeline-20261017T101227Z.json",
+  "preflight_path": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/final-diagnostic-pipeline-20261017T101227Z.preflight.json",
+  "master_log": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/final-diagnostic-pipeline-20261017T101227Z.log",
+  "stage_logs": {
+    "final-train": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/final-diagnostic-pipeline-20261017T101227Z.final-train.log",
+    "seal": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/final-diagnostic-pipeline-20261017T101227Z.seal.log",
+    "evaluate": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/final-diagnostic-pipeline-20261017T101227Z.evaluate.log",
+    "report": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/final-diagnostic-pipeline-20261017T101227Z.report.log"
+  },
+  "exit_code_path": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/final-diagnostic-pipeline-20261017T101227Z.exitcode",
+  "commands": {
+    "final-train": [
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/.venv/bin/python",
+      "-u",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/diagnostic_workflow.py",
+      "workflow",
+      "final-train",
+      "--data-dir",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/EuroSAT_RGB",
+      "--output",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2",
+      "--device",
+      "cuda"
+    ],
+    "seal": [
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/.venv/bin/python",
+      "-u",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/diagnostic_workflow.py",
+      "workflow",
+      "seal",
+      "--data-dir",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/EuroSAT_RGB",
+      "--output",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2",
+      "--device",
+      "cuda"
+    ],
+    "evaluate": [
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/.venv/bin/python",
+      "-u",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/diagnostic_workflow.py",
+      "workflow",
+      "evaluate",
+      "--data-dir",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/EuroSAT_RGB",
+      "--output",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2",
+      "--device",
+      "cuda"
+    ],
+    "report": [
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/.venv/bin/python",
+      "-u",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/diagnostic_workflow.py",
+      "workflow",
+      "report",
+      "--data-dir",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/EuroSAT_RGB",
+      "--output",
+      "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2",
+      "--device",
+      "cuda"
+    ]
+  },
+  "stage_order": [
+    "final-train",
+    "seal",
+    "evaluate",
+    "report"
+  ],
+  "stage_results": {
+    "final-train": {
+      "state": "interrupted",
+      "updated_utc": "2026-10-17T10:12:27.924823+00:00",
+      "started_utc": "2026-10-17T10:12:27.924823+00:00",
+      "observed_utc": "2026-10-17T10:26:51.352731+00:00",
+      "reason": "Laptop reboot following reported graphical crash; no saved exit code."
+    }
+  },
+  "final_required": 680,
+  "final_reusable_at_launch": 519,
+  "new_final_trainings_at_launch": 161,
+  "final_training_completed": 522,
+  "test_evaluations_completed": 0,
+  "output_root": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2",
+  "generated_output": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/generated",
+  "retry_policy": "no retries; stop at first failure",
+  "mechanism": "detached POSIX session, closed stdin, shell exit trap and stage logs",
+  "current_stage": "final-train",
+  "stage_state": "interrupted",
+  "updated_utc": "2026-10-17T10:12:27.924823+00:00",
+  "boundary_process_pid": 654742,
+  "pre_reboot_lifecycle_state": "running",
+  "observed_utc": "2026-10-17T10:26:51.352731+00:00",
+  "interrupted_run": "bcc82aff60cae2c9e08e7bdc",
+  "supervisor_observed_active": false,
+  "reboot_note": "Laptop rebooted; no exit code was recorded because the supervisor could not run its exit trap. Graphical crash root cause remains unknown."
+}

@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions & environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# EuroSAT Dataset & Large archives
+EuroSAT_RGB/
+EuroSAT/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+
+# PyTorch Model Checkpoints & Weights (40+ MB each, ~49 GB total)
+*.pt
+*.pth
+*.onnx
+*.bin
+*.ckpt
+*.h5
+*.safetensors
+
+# Large experimental run directories & raw model outputs
+outputs/**/runs/
+outputs/**/interrupted/
+outputs/**/phase2_closure*/
+outputs/**/operations/
+outputs/**/diagnostics/
+outputs/**/partitions/
+outputs/**/.workflow.lock
+
+# Log files & exit markers
+*.log
+outputs/**/*.log
+*.exitcode
+
+# Temporary files & locks
+.workflow.lock
+.ipynb_checkpoints/
+
+# OS / Editor configs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

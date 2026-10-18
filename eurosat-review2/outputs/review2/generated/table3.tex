@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Dirichlet local-only models on the global test set: client macro-F1 averaged within each seed, then five-seed mean $\pm$ sample SD (\%).}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Loss & $\alpha=0.1$ & $\alpha=0.5$ & $\alpha=1$ & $\alpha=10$ \\
+\midrule
+Cross-entropy & $26.33 \pm 6.13$ & $71.39 \pm 3.87$ & $76.88 \pm 1.73$ & $93.01 \pm 2.34$ \\
+Class-balanced & $32.03 \pm 7.96$ & $75.58 \pm 4.37$ & $79.50 \pm 1.83$ & $93.02 \pm 2.35$ \\
+Focal & $26.63 \pm 6.54$ & $70.75 \pm 3.58$ & $76.82 \pm 1.71$ & $92.86 \pm 2.30$ \\
+\bottomrule
+\end{tabular}}
+\end{table}

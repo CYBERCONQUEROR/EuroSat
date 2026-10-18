@@ -1,0 +1,22 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb,booktabs,graphicx,url}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\pending}[1]{\textit{Pending experimental output: #1.}}
+\newcommand{\resulttable}[1]{\IfFileExists{../outputs/review2/generated/table#1.tex}{\input{../outputs/review2/generated/table#1.tex}}{\IfFileExists{generated/table#1.tex}{\input{generated/table#1.tex}}{\pending{Table #1 requires completed five-seed runs}}}}
+\newcommand{\resultfigure}[2]{\begin{figure}[t]\centering
+\IfFileExists{../outputs/review2/generated/figure#1.pdf}{\includegraphics[width=\columnwidth]{../outputs/review2/generated/figure#1.pdf}}{\IfFileExists{generated/figure#1.pdf}{\includegraphics[width=\columnwidth]{generated/figure#1.pdf}}{\pending{Figure #1 requires completed experiments}}}
+\caption{#2}\end{figure}}
+\title{Loss Functions for EuroSAT Classification Under Synthetic Label Skew and Long Tailed Training Data}
+\author{\IEEEauthorblockN{Author information to be supplied}}
+\begin{document}
+\maketitle
+\noindent\textbf{Working draft.} Historical Phase 1 results are verified; the new learning-rate search and five-seed experiments have not yet been completed. No missing result is replaced with a hypothetical value. This draft starts with the six sections requested by the reviewer; front matter can be finalized after the experiments.
+\input{related_work}
+\input{problem_definition}
+\input{method}
+\input{experimental_setup}
+\input{results}
+\input{limitations}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

@@ -66,11 +66,29 @@ EuroSAT/
 *.zip
 *.tar.gz
 *.tar
+*.tgz
+*.7z
 
-# Model checkpoints & Outputs
+# Model checkpoints & Weights
 *.pt
 *.pth
 *.onnx
+*.bin
+*.ckpt
+*.h5
+*.safetensors
+
+# Experimental run outputs & logs
+outputs/**/runs/
+outputs/**/interrupted/
+outputs/**/phase2_closure*/
+outputs/**/operations/
+outputs/**/diagnostics/
+outputs/**/partitions/
+outputs/**/.workflow.lock
+*.log
+*.exitcode
+.workflow.lock
 
 # IDE & Editor configs
 .vscode/
@@ -83,3 +101,4 @@ EuroSAT/
 .DS_Store
 Thumbs.db
 desktop.ini
+EuroSat_repo/

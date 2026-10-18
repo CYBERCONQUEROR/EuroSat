@@ -1,0 +1,16 @@
+{
+  "job": {
+    "beta": 0.99,
+    "client_id": 7,
+    "gamma": 0.0,
+    "image_size": 96,
+    "initialization": "imagenet",
+    "kind": "dirichlet",
+    "loss": "class-balanced",
+    "lr": 0.0001,
+    "norm": "batch",
+    "seed": 2024,
+    "value": 0.1
+  },
+  "protocol_hash": "d16e26df1f37b4180115e5cd60a082a7d8419bfbc9bbe0e2fb1733c4b567829b"
+}

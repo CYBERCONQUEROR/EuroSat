@@ -1,0 +1,14 @@
+{
+  "commit": "2658cf6da9522e5cb86ea3a5e48eec4eb21e3ef5",
+  "folder": "eurosat-phase1/eurosat-phase1/outputs/phase1",
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "status": "historical metrics only; original weights unavailable",
+  "sha256": {
+    "summary.csv": "7f264ec868d642485aa773f357364c5539a781ea85ae6e217debdef747ab4383",
+    "results.csv": "bed8d451a5377bfde9a49ed29fd9d45891c4cd03bff7317d15bc3423fc939095"
+  }
+}

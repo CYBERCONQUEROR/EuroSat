@@ -1,0 +1,7 @@
+# CPU-tested shared dependencies; retain Colab's working CUDA torch/torchvision.
+numpy==2.3.5
+scikit-learn==1.8.0
+Pillow==12.3.0
+matplotlib==3.10.8
+pandas==2.2.3
+tqdm==4.67.1
