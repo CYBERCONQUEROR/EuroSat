@@ -1,0 +1,21 @@
+\section{Results}
+\subsection{Pooled baseline and resolution choice}
+\IfFileExists{../outputs/review2/generated/table1.tex}{\resulttable{1}}{\input{generated/table1_historical.tex}}
+The historical $96\times96$ and $224\times224$ models are comparable under the predeclared validation tolerance: their mean validation macro-F1 differs by 0.277 percentage points, below the 0.5-point threshold. The 96 model was selected for efficiency, with a 3.09-fold ratio of historical mean loop durations (33.44 versus 10.84 minutes). This practical selection does not establish statistical equivalence or the superiority of either resolution.
+
+The historical scratch BN/GN comparison is conditional on the training setup and the original shared learning rate. The GN search must be completed before interpreting the revised normalization comparison. ImageNet and scratch recipes also use different learning rates, so the complete observed difference cannot be attributed solely to pretraining. The final baseline table will use five seeds and the selected GN learning rate; the preliminary table is explicitly labeled as three-seed historical evidence.
+
+\subsection{Long-tailed and client-skewed training}
+\resulttable{2}
+Table 2 is reserved for five-seed long-tail test macro-F1 from actual run records. It compares three objectives on identical subsets; the direction or size of an improvement is not assumed in advance.
+\resulttable{3}
+Table 3 is reserved for seed-level means of ten local-only client models evaluated on the global test set. This comparison does not measure federated aggregation, communication efficiency or an ensemble's performance.
+\IfFileExists{../outputs/review2/generated/results_discussion.tex}{\input{../outputs/review2/generated/results_discussion.tex}}{\pending{complete the experiments and generate the measured loss differences}}
+
+\resultfigure{1}{Training class counts by client for $\alpha=0.1$ and $10$, using partition seed 42 and a shared color scale. These panels show synthetic label allocation, not geographic regions or classification accuracy.}
+\resultfigure{2}{Test macro-F1 versus long-tail ratio and Dirichlet alpha for each loss, with sample-standard-deviation error bars over five seeds. Client scores are averaged within a seed before calculating uncertainty; a visually monotonic trend is not a statistical significance test.}
+\resultfigure{3}{Per-class recall at ratio 100 for CE and the validation-selected non-CE comparator, with five-seed sample SD. A gain on one class does not establish a gain for every class, and minority status follows the frozen training counts.}
+\resultfigure{4}{Confusion matrix of the validation-selected pooled ImageNet BN model at 96, using seed 42 consistently rather than choosing the best test seed. Cells are test image counts; this illustration is one run and does not replace five-seed summary statistics.}
+
+\subsection{Secondary normalization check}
+\pending{report scratch GN ratio-100 CE versus the validation-selected loss from generated/scratch\_gn\_ratio100.csv}. This check tests whether the observed loss comparison persists under our selected scratch-GN setup. Small or negative gains will be retained and discussed rather than omitted. Per-class recall tables, client results, GN learning-rate scores, selected beta/gamma values and learning histories belong in the supplementary material.

@@ -1,0 +1,34 @@
+[
+  {
+    "kind": "longtail",
+    "values": [
+      10,
+      50,
+      100
+    ],
+    "mean_macro_f1": [
+      0.9717792750748796,
+      0.9479990542786,
+      0.9324752756080776
+    ],
+    "expected_monotonic": true,
+    "action": "Inspect if nonmonotonic; retain and report real values."
+  },
+  {
+    "kind": "dirichlet",
+    "values": [
+      0.1,
+      0.5,
+      1,
+      10
+    ],
+    "mean_macro_f1": [
+      0.2632530125085271,
+      0.713944708373252,
+      0.7687900492751625,
+      0.9300817141376954
+    ],
+    "expected_monotonic": true,
+    "action": "Inspect if nonmonotonic; retain and report real values."
+  }
+]

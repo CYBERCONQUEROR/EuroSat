@@ -1,0 +1,25 @@
+\section{Problem Definition}
+Let $\mathcal{D}_{\mathrm{tr}},\mathcal{D}_{\mathrm{val}}$ and $\mathcal{D}_{\mathrm{te}}$ be fixed, disjoint subsets of RGB images with labels $y\in\{1,\ldots,10\}$. A classifier $f_\theta$ predicts one class per image. Only the membership of the training data is changed in the imbalance experiments. Validation and test subsets retain their original stratified class counts, which are not exactly equal across classes.
+
+\subsection{Dirichlet label skew}
+For each class $k$, client allocation proportions are drawn as
+\begin{equation}
+\boldsymbol{\pi}_k\sim\operatorname{Dirichlet}(\alpha\mathbf{1}_{10}),\qquad
+\alpha\in\{0.1,0.5,1,10\}.
+\end{equation}
+NIID-Bench's client-size balancing mask is applied before normalizing these proportions and allocating shuffled class indices~\cite{li2022}. Consequently, the final allocation is not an unconstrained Dirichlet draw. A complete partition is redrawn if a client has fewer than ten images. The random stream is seeded once and advanced on each attempt, ensuring deterministic retries. All training images are assigned exactly once to one of ten clients.
+
+\subsection{Long-tailed training subsets}
+For a fixed class-rank permutation and $k\in\{0,\ldots,9\}$, the target count is
+\begin{equation}
+ n_k=\left\lfloor n_{\max}\rho^{-k/9}\right\rfloor,\qquad
+ n_{\max}=2100,\quad\rho\in\{10,50,100\}.
+\end{equation}
+A feasible rank permutation is selected with seed 42: the head is a largest original training class and all targets are available without replacement. The permutation is retained for all ratios and experiment seeds. Each experiment seed changes the within-class sample selection, using the same subset across losses. The head retains all 2,100 images, and the tail contains 210, 42 or 21 images.
+
+\subsection{Evaluation}
+We report accuracy, macro-F1 and per-class recall. Undefined class F1 is assigned zero, and all ten classes are included in macro-F1. For Dirichlet experiments, each client model is evaluated on the complete global test set. With $M_{s,c}$ denoting client $c$'s metric at seed $s$, the seed-level score is
+\begin{equation}
+ M_s=\frac{1}{10}\sum_{c=1}^{10}M_{s,c}.
+\end{equation}
+Reported uncertainty is the sample standard deviation of the five $M_s$ values, not the dispersion of 50 client models treated as independent replications. Per-client results are retained separately. Pooled and long-tailed experiments contribute one model per setting and seed.

@@ -1,0 +1,32 @@
+\section{Method}
+\subsection{Classifier and normalization}
+The primary model is ImageNet-initialized ResNet-18 with BatchNorm, a standard stem, and a ten-output linear classifier~\cite{he2016}. All parameters are fine-tuned at $96\times96$ input size. A secondary comparison uses a randomly initialized ResNet-18 with 32-group GroupNorm~\cite{wu2018}. Its learning rate is selected on validation before the ratio-100 comparison. Conclusions about BN and GN apply under our training setup.
+
+\subsection{Cross-entropy and class-balanced loss}
+Let $p_y$ be the softmax probability of the true class. The baseline loss is
+\begin{equation}
+\mathcal{L}_{\mathrm{CE}}=-\log p_y.
+\end{equation}
+For training count $n_k>0$, the effective-number weighting of Cui et al.~\cite{cui2019} is
+\begin{equation}
+ E_k=\frac{1-\beta^{n_k}}{1-\beta},\qquad
+ \widetilde w_k=\frac{1}{E_k},\qquad
+ \beta\in\{0.99,0.999,0.9999\}.
+\end{equation}
+With $\mathcal P$ the set of classes present in the current training subset, weights are normalized as
+\begin{equation}
+ w_k=\frac{|\mathcal P|\widetilde w_k}{\sum_{j\in\mathcal P}\widetilde w_j},
+ \qquad \mathcal L_{\mathrm{CB}}=-w_y\log p_y.
+\end{equation}
+Absent classes receive weight zero; their inverse effective number is never computed. The batch objective is the arithmetic mean of weighted per-example losses. Counts come only from the client's or long-tailed model's training data.
+
+\subsection{Focal loss}
+The multiclass softmax adaptation of focal loss~\cite{lin2017} is
+\begin{equation}
+ \mathcal L_{\mathrm{FL}}=-(1-p_y)^\gamma\log p_y,
+ \qquad\gamma\in\{1,2\}.
+\end{equation}
+No additional class-dependent focal alpha is used. Stable log-softmax and expm1 operations avoid numerical cancellation for highly confident predictions.
+
+\subsection{Selection and checkpointing}
+For all objectives, early stopping and checkpoint selection use unweighted validation cross-entropy with patience ten. Validation macro-F1 at the selected checkpoint chooses hyperparameters. One beta and one gamma are fixed per imbalance regime by averaging validation macro-F1 equally across clients, severity values and three tuning seeds. These values are then retained for all five final seeds. For scratch GN at ratio 100, the non-CE comparator is selected from the two tuned objectives using pretrained ratio-100 validation macro-F1. It is compared with CE even if its eventual test gain is negative. Test metrics never enter these selection functions.

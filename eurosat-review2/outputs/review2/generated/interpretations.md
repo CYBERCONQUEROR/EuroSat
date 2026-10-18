@@ -1,0 +1,37 @@
+# Generated result interpretations
+
+All uncertainty below is sample SD over five seeds.
+
+Table 1 compares complete pooled training recipes. ImageNet and scratch models have different learning rates, so their difference is not an isolated pretraining effect.
+
+## longtail
+
+10, class-balanced: mean macro-F1 difference versus CE = +0.207 percentage points. This descriptive difference is not a significance test.
+
+10, focal: mean macro-F1 difference versus CE = -0.045 percentage points. This descriptive difference is not a significance test.
+
+50, class-balanced: mean macro-F1 difference versus CE = +0.638 percentage points. This descriptive difference is not a significance test.
+
+50, focal: mean macro-F1 difference versus CE = -0.088 percentage points. This descriptive difference is not a significance test.
+
+100, class-balanced: mean macro-F1 difference versus CE = +0.692 percentage points. This descriptive difference is not a significance test.
+
+100, focal: mean macro-F1 difference versus CE = -0.484 percentage points. This descriptive difference is not a significance test.
+
+## dirichlet
+
+0.1, class-balanced: mean macro-F1 difference versus CE = +5.707 percentage points. This descriptive difference is not a significance test.
+
+0.1, focal: mean macro-F1 difference versus CE = +0.309 percentage points. This descriptive difference is not a significance test.
+
+0.5, class-balanced: mean macro-F1 difference versus CE = +4.190 percentage points. This descriptive difference is not a significance test.
+
+0.5, focal: mean macro-F1 difference versus CE = -0.642 percentage points. This descriptive difference is not a significance test.
+
+1, class-balanced: mean macro-F1 difference versus CE = +2.622 percentage points. This descriptive difference is not a significance test.
+
+1, focal: mean macro-F1 difference versus CE = -0.063 percentage points. This descriptive difference is not a significance test.
+
+10, class-balanced: mean macro-F1 difference versus CE = +0.007 percentage points. This descriptive difference is not a significance test.
+
+10, focal: mean macro-F1 difference versus CE = -0.148 percentage points. This descriptive difference is not a significance test.

@@ -1,0 +1,13 @@
+\section{Experimental Setup}
+The verified EuroSAT manifest contains 27,000 RGB images, allocated to 18,900 training, 4,050 validation and 4,050 test images with split seed 42. Evaluation support is 300 for Pasture, 375 for Highway, Industrial, PermanentCrop and River, and 450 for each remaining class. The phrase ``balanced evaluation'' is therefore interpreted as preserving the original stratified evaluation distribution, not silently constructing a new uniform test set.
+
+The primary optimizer is AdamW with batch size 32 and weight decay $10^{-4}$. Initial learning rates are $10^{-4}$ for ImageNet fine-tuning and $10^{-3}$ for scratch BN. Scratch GN is searched at $\{3\times10^{-4},10^{-3},3\times10^{-3}\}$ with seeds 42, 123 and 2024. A plateau scheduler halves the learning rate with patience two. Training is capped at 100 epochs. Random horizontal and vertical flips are applied only in training; all images use the specified resize and ImageNet RGB normalization.
+
+Final experiments use seeds $\{42,123,2024,7,99\}$. A seed controls both subset sampling and training randomness; the same frozen subset is shared by loss comparisons. Hyperparameter tuning uses the first three seeds. Identical selected tuning jobs are reused in the final set. The complete protocol consists of 680 final evaluations and, with reuse, 1,073 unique training jobs. The supplementary files retain the search outcomes and all run metadata.
+
+Historical Phase 1 runs recorded an NVIDIA GeForce RTX 4050 Laptop GPU, Python 3.12.13, PyTorch 2.14.1+cu130, torchvision 0.29.1+cu130 and CUDA 13.0. These describe the historical artifacts only. \pending{record actual new-run hardware and software from environment.json and the successful pip-freeze snapshot}. Runtime is training plus validation loop time, including bookkeeping, and excludes setup and separate test evaluation.
+
+The historical report numbers originate from commit
+\nolinkurl{2658cf6da9522e5cb86ea3a5e48eec4eb21e3ef5}, folder
+\nolinkurl{eurosat-phase1/eurosat-phase1/outputs/phase1}.
+The new protocol stores source checksums, split hashes and immutable selection evidence. \pending{insert final tagged commit and downloadable checkpoint archive with its SHA-256}. Historical and new results must not be mixed without their seed counts and provenance.

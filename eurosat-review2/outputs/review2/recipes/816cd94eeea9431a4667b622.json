@@ -1,0 +1,16 @@
+{
+  "job": {
+    "beta": 0.9999,
+    "client_id": 0,
+    "gamma": 0.0,
+    "image_size": 96,
+    "initialization": "scratch",
+    "kind": "longtail",
+    "loss": "class-balanced",
+    "lr": 0.0003,
+    "norm": "group",
+    "seed": 7,
+    "value": 100.0
+  },
+  "protocol_hash": "d16e26df1f37b4180115e5cd60a082a7d8419bfbc9bbe0e2fb1733c4b567829b"
+}

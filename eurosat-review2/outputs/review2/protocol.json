@@ -1,0 +1,67 @@
+{
+  "aggregation": "unweighted client mean within seed; sample SD across five seed means",
+  "alphas": [
+    0.1,
+    0.5,
+    1.0,
+    10.0
+  ],
+  "batch_size": 32,
+  "betas": [
+    0.99,
+    0.999,
+    0.9999
+  ],
+  "class_order_seed": 42,
+  "code_sha256": {
+    "data.py": "e7c4e3b5b397cd2032dcb7c3708126bb046b03fe3c45e64207259c2b147c5bb3",
+    "environment_capture.py": "94ad62cd1abd1433dc0274462c92a1e63588187c60932d3a124776064ab79f5c",
+    "evaluate.py": "421231cd63018f7357b4dd35bf9eb1272635e75b102e2e0053c65d9edc121539",
+    "experiment_utils.py": "6530c29032b7ecc4c4200f885e24f38ed1bdcbdff012ff9dd8ddff01db157c8a",
+    "losses.py": "e3f1f190b851c692ff1ce85a2058ed3b6b09c7e5d415d4a8113bbd45da8dfc91",
+    "metrics.py": "429d25c91a9807ea6b63e47d38c2e911604bc44eb6469bbd865c34ed763a5302",
+    "model.py": "1aadad969058a30c927d4e2d01824416903149db7588d858b0d18a9b3f13eec5",
+    "partition.py": "2076785b52e0893cde0f7b3ce5d662faea0b3d095e0ae18bfbe1307f2ba5ef1d",
+    "review_workflow.py": "1ddc8968207c90bf48e1f4c197b2ffccf010875f748beb0658cccebe1661b12a",
+    "train.py": "dae255622ef88547802b751fb8380628e2b38d4c22ea661f8272c8b86994e320",
+    "utils.py": "25063beb0a172f04124ce99ce2d8c700340b2d4f775dd86988bd1589dc15343c"
+  },
+  "epochs": 100,
+  "evaluation_split": "original stratified 4050-image subsets, unchanged, not exactly class-balanced",
+  "gammas": [
+    1.0,
+    2.0
+  ],
+  "gn_lrs": [
+    0.0003,
+    0.001,
+    0.003
+  ],
+  "hyperparameter_scope": "one beta and gamma per regime",
+  "image_size": 96,
+  "num_clients": 10,
+  "original_commit": "2658cf6da9522e5cb86ea3a5e48eec4eb21e3ef5",
+  "patience": 10,
+  "ratios": [
+    10,
+    50,
+    100
+  ],
+  "schema": 2,
+  "seeds": [
+    42,
+    123,
+    2024,
+    7,
+    99
+  ],
+  "selection_metric": "validation_macro_f1",
+  "split_hash": "314a000080506dac74ddf07a196d1d76311f847418149073f17c9628e901e7bf",
+  "tuning_seeds": [
+    42,
+    123,
+    2024
+  ],
+  "validation_loss": "unweighted_cross_entropy",
+  "weight_decay": 0.0001
+}

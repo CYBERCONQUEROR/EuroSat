@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Pooled baseline results over five seeds, mean $\pm$ sample standard deviation. GN uses its validation-selected learning rate.}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Model & Input & Accuracy (\%) & Macro-F1 (\%) & Time (min) \\
+\midrule
+ImageNet, BN & 64 & $98.28 \pm 0.18$ & $98.22 \pm 0.18$ & $9.35 \pm 0.56$ \\
+ImageNet, BN & 96 & $98.62 \pm 0.07$ & $98.56 \pm 0.07$ & $11.78 \pm 2.30$ \\
+ImageNet, BN & 224 & $98.96 \pm 0.17$ & $98.92 \pm 0.18$ & $35.53 \pm 6.91$ \\
+Scratch, BN & 96 & $96.86 \pm 0.24$ & $96.76 \pm 0.26$ & $17.46 \pm 1.28$ \\
+Scratch, GN & 96 & $95.58 \pm 0.39$ & $95.46 \pm 0.39$ & $14.17 \pm 1.43$ \\
+\bottomrule
+\end{tabular}}
+\end{table}

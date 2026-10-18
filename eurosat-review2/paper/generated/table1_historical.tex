@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Historical Phase 1 results, three seeds (not the new five-seed results). GN used LR 0.001; its requested learning-rate search is pending.}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Model & Input & Accuracy (\%) & Macro-F1 (\%) & Time (min) \\
+\midrule
+ImageNet, BN & 64 & $98.32 \pm 0.11$ & $98.27 \pm 0.11$ & 8.84 \\
+ImageNet, BN & 96 & $98.64 \pm 0.09$ & $98.59 \pm 0.08$ & 10.84 \\
+ImageNet, BN & 224 & $98.94 \pm 0.24$ & $98.90 \pm 0.25$ & 33.44 \\
+Scratch, BN & 96 & $96.87 \pm 0.24$ & $96.76 \pm 0.26$ & 16.86 \\
+Scratch, GN & 96 & $95.31 \pm 0.20$ & $95.19 \pm 0.19$ & 13.47 \\
+\bottomrule
+\end{tabular}}
+\end{table}

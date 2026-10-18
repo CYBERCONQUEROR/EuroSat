@@ -1,0 +1,26 @@
+{
+  "launched_utc": "2026-10-14T23:38:38.843653+00:00",
+  "supervisor_pid": 358260,
+  "session_id": 358260,
+  "process_group_id": 358260,
+  "command": [
+    "/media/phoenix/New Volume/krishnav/eurosat-resnet18/.venv/bin/python",
+    "-u",
+    "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/review_workflow.py",
+    "loss-search",
+    "--data-dir",
+    "/media/phoenix/New Volume/krishnav/eurosat-resnet18/EuroSAT_RGB",
+    "--output",
+    "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2",
+    "--device",
+    "cuda"
+  ],
+  "working_directory": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2",
+  "log_path": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/loss-search-resume-20261014T233838Z.log",
+  "exit_code_path": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/loss-search-resume-20261014T233838Z.exitcode",
+  "completed_at_launch": 272,
+  "total_loss_jobs": 774,
+  "remaining_at_launch": 502,
+  "mechanism": "detached POSIX session with shell exit-code record, stdin /dev/null, console log",
+  "retry_policy": "one invocation; stop on first failure; no retries"
+}
