@@ -1,0 +1,53 @@
+{
+  "method": "Both PDFs are image-only. All pages rendered with pdftoppm and read visually; quotations manually transcribed from page images. Original review page 3 is blank.",
+  "sources": [
+    {
+      "file": "review.pdf",
+      "sha256": "4465aa5fed277787a0f028fcaa05654b4ecbf228ed459c861f672f802d626068",
+      "pages": 3
+    },
+    {
+      "file": "Reviews_2.pdf",
+      "sha256": "7f72e9916dcace2c1615a3f41037cb7ed2bdfa05dbe701ea9cb59285df8f6cad",
+      "pages": 3
+    }
+  ],
+  "excerpts": [
+    {
+      "file": "review.pdf",
+      "page": 2,
+      "section": "3.A, Imbalanced data",
+      "quote": "Dirichlet split into 5 and 10 clients with alpha values 0.1, 0.5, 1 and 10."
+    },
+    {
+      "file": "review.pdf",
+      "page": 2,
+      "section": "3.B, Imbalance-aware training",
+      "quote": "Compare plain cross-entropy with weighted cross-entropy, class-balanced loss and focal loss. Choose beta and gamma on validation only."
+    },
+    {
+      "file": "Reviews_2.pdf",
+      "page": 1,
+      "section": "2, Part A, Dirichlet split",
+      "quote": "Split the training set among 10 clients with alpha = 0.1, 0.5, 1 and 10."
+    },
+    {
+      "file": "Reviews_2.pdf",
+      "page": 2,
+      "section": "Part B, Train with normal cross-entropy",
+      "quote": "Dirichlet: train each client's model on its own data and test it on the global test set. Also give the pooled-data model from Phase 1 as the reference."
+    },
+    {
+      "file": "Reviews_2.pdf",
+      "page": 2,
+      "section": "Part C, Try better losses",
+      "quote": "Choose beta and gamma on validation macro-F1, fix them, and then run the final five seeds. Run this for both the long-tailed and the Dirichlet setting."
+    },
+    {
+      "file": "Reviews_2.pdf",
+      "page": 3,
+      "section": "Section 3, Table 3 title",
+      "quote": "Dirichlet split with 10 clients, global test macro-F1"
+    }
+  ]
+}

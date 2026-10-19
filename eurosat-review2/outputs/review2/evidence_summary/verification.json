@@ -1,0 +1,111 @@
+{
+  "audited_utc": "2026-10-18T12:48:29.026755+00:00",
+  "scope": "saved-data audit; no training, inference or hyperparameter changes",
+  "final_required": 680,
+  "final_verified": 680,
+  "test_prediction_rows_verified": 2754000,
+  "checkpoints_hash_and_tensor_checks": 680,
+  "partitions_regenerated_and_validated": 35,
+  "selection_evidence_verified": {
+    "gn": 9,
+    "loss": 774
+  },
+  "instrumented_final_runs": 162,
+  "protocol_fingerprint": "d16e26df1f37b4180115e5cd60a082a7d8419bfbc9bbe0e2fb1733c4b567829b",
+  "split_fingerprint": "314a000080506dac74ddf07a196d1d76311f847418149073f17c9628e901e7bf",
+  "final_plan_fingerprint": "978aee34d8985be41593235e36744aea16098ae89d5c9a4998fb04a6cbbd8d5a",
+  "final_plan_sha256": "2240abaac0093603a59c6d6fc8f6db05587901e4f47d6992413ec47a1671de57",
+  "results_sha256": "60cb19e9629bf4be4c23a3a81606d07cbbc2eddb4981bb8d6d41f38f644f8ff8",
+  "pipeline_stage_order_verified": true,
+  "original_recovery_config_identical": true,
+  "original_first_12_epoch_metrics_identical": true,
+  "scientific_fix_applied": false,
+  "failure_cause": "Unknown: original non-finite validation loss did not recur in the single original-configuration reproduction.",
+  "recovery": {
+    "verified_utc": "2026-10-17T10:11:08.475302+00:00",
+    "cause": "Unknown: original non-finite validation loss did not recur in the single original-configuration reproduction.",
+    "scientific_fix_applied": false,
+    "recovery_method": "fresh restart from original seed and configuration; not a resume from epoch 13",
+    "original_archive": "/media/phoenix/New Volume/krishnav/eurosat-resnet18/eurosat-review2/outputs/review2/interrupted/8953d19d54840571685e0d64_diagnostic_original_20261017T100645092169",
+    "epochs_completed": 40,
+    "best_epoch": 30,
+    "best_validation_loss": 0.14090992494681734,
+    "best_validation_macro_f1": 0.9560252843458066,
+    "original_first_12_epoch_metrics_identical": true,
+    "finite_history": true,
+    "finite_saved_model_state": true,
+    "failure_capture_recurred": false,
+    "precision": {
+      "default_dtype": "torch.float32",
+      "autocast": {
+        "cpu": {
+          "enabled": false,
+          "dtype": "torch.bfloat16"
+        },
+        "cuda": {
+          "enabled": false,
+          "dtype": "torch.float16"
+        }
+      },
+      "float32_matmul_precision": "highest",
+      "cuda_matmul_allow_tf32": false,
+      "cudnn_allow_tf32": true,
+      "cudnn_enabled": true,
+      "cudnn_benchmark": false,
+      "cudnn_deterministic": true,
+      "deterministic_algorithms": false
+    },
+    "validation_model_eval": true,
+    "validation_loss": "unweighted_cross_entropy",
+    "diagnostic_test_count": 14,
+    "final_completed": 519,
+    "final_required": 680,
+    "remaining_final_trainings": 161,
+    "completion_sha256": {
+      "best_model.pt": "3fae1b712fcb6623a00dc4250fd3cdfaada9d9df02d43c61665c7082e317ddce",
+      "config.json": "8cdf4e6fb7fb89d92dd02cd51ef038832145271d03cd77a7b55a2fcef9ae969e",
+      "best_validation_metrics.json": "896e480f85570825b5832a1dbea5942177adc063a69fb52255a7547c33ad9235",
+      "history.csv": "51f25de80c912a7442ca28dc5eb0592122e4166cc76d7cdc717ec96fe1d40eca"
+    },
+    "diagnostic_files": {
+      "numerical_diagnostics.py": "12753b5df2fc52676c98b03aaebeb9a92d398ce169be93c4736cb1a243f81fc3",
+      "diagnostic_workflow.py": "db4dffc794ed8c93b6b2fd3da94857f964a625b1ff294c159d34510fc1a7e658",
+      "replay_numerical_capture.py": "0be30b488e09519d53cdb8d9d8fb6b8757f3d4c7904a854de122e3dc15b49261",
+      "test_numerical_diagnostics.py": "4077d01309fc07e8b86326ff1b51aa91511e737f9af08c642679073c2fbc279c"
+    },
+    "timing_note": "Diagnostic bookkeeping adds overhead to newly instrumented elapsed-time measurements; completed measurements are unchanged."
+  },
+  "limitations": [
+    "ambiguous: original includes N=5; later detailed next-phase plan specifies N=10 without explicitly waiving N=5",
+    "Original seal binds jobs/protocol/selections; test artifacts have no historical signed receipt. Current audit binds saved predictions and reports by SHA-256; inference was not rerun.",
+    "Saved configuration and checkpoint metadata establish intended subsets; no per-image training access trace or historical image-byte hash manifest exists.",
+    "File timestamps corroborate seal-before-evaluation but are not cryptographic timestamps.",
+    "Checkpoint weights and image bytes are not included in the audit bundle."
+  ],
+  "scope_decision": {
+    "recorded_utc": "2026-10-18T13:09:48.208796+00:00",
+    "evidence": "Attached original review.pdf and Reviews_2.pdf, visually read in full",
+    "correction": "Earlier messages were incorrectly treated as introducing an unconditional N=5 requirement. That interpretation is withdrawn.",
+    "original_N5_and_N10_explicit": true,
+    "later_N10_explicit": true,
+    "later_N5_removal_explicit": false,
+    "reviewer_supersession_verified": false,
+    "N5_current_requirement": "ambiguous: original includes N=5; later detailed next-phase plan specifies N=10 without explicitly waiving N=5",
+    "N5_loss_scope": "ambiguous if N=5 is retained: baseline only versus extending Part C is not stated explicitly",
+    "reviewer_documents_available": true,
+    "N5_experiments_present": false,
+    "N10_final_verified": 680,
+    "additional_training_launched": false,
+    "closure_state": "N=10 experiment verified complete; overall closure pending reviewer clarification of N=5 scope and remaining editorial/release requirements.",
+    "prior_archive_sha256": "9c1f0db7d1dfe9d651bae621ce9c9715fb7f7f162f36f6f12d59b637163e917e"
+  },
+  "closure_state": "N=10 experiment verified complete; overall closure pending reviewer clarification of N=5 scope and remaining editorial/release requirements.",
+  "gn_non_ce_comparator_recomputed": {
+    "loss": "class-balanced",
+    "beta": 0.9999,
+    "gamma": 0.0,
+    "score": 0.9362598589629112
+  },
+  "existing_generated_summary_matches_independent_export": true,
+  "review_scope_corrected_utc": "2026-10-18T13:09:48.208796+00:00"
+}

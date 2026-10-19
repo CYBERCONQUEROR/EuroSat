@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-10-18T13:09:48.208796+00:00",
+  "evidence": "Attached original review.pdf and Reviews_2.pdf, visually read in full",
+  "correction": "Earlier messages were incorrectly treated as introducing an unconditional N=5 requirement. That interpretation is withdrawn.",
+  "original_N5_and_N10_explicit": true,
+  "later_N10_explicit": true,
+  "later_N5_removal_explicit": false,
+  "reviewer_supersession_verified": false,
+  "N5_current_requirement": "ambiguous: original includes N=5; later detailed next-phase plan specifies N=10 without explicitly waiving N=5",
+  "N5_loss_scope": "ambiguous if N=5 is retained: baseline only versus extending Part C is not stated explicitly",
+  "reviewer_documents_available": true,
+  "N5_experiments_present": false,
+  "N10_final_verified": 680,
+  "additional_training_launched": false,
+  "closure_state": "N=10 experiment verified complete; overall closure pending reviewer clarification of N=5 scope and remaining editorial/release requirements.",
+  "prior_archive_sha256": "9c1f0db7d1dfe9d651bae621ce9c9715fb7f7f162f36f6f12d59b637163e917e"
+}

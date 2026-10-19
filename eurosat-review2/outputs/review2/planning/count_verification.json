@@ -1,0 +1,11 @@
+{
+  "CE_baseline": 100,
+  "fixed_loss_finals": 300,
+  "separate_tuning_search": 360,
+  "selected_finals_overlap_search": 180,
+  "new_final_seed_trainings": 120,
+  "separate_tuning_total_unique": 480,
+  "extra_after_completed_CE_fixed": 200,
+  "extra_after_completed_CE_separate_tuning": 380,
+  "additional_training_launched": false
+}
