@@ -68,6 +68,8 @@ EuroSAT/
 *.tar
 *.tgz
 *.7z
+!outputs/**/phase2_closure_20261018_review_correction.zip
+!outputs/**/phase2_closure_20261018_review_correction.zip.sha256
 
 # Model checkpoints & Weights
 *.pt
